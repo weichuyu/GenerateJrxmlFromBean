@@ -2,7 +2,7 @@
 一、根据bean中的注解，创建JasperReport可以读的报表模板文件jrxml  
 （一）本工具是代码片段，在idea中直接run就好了，编译出的jar包没有什么用  
 （二）ireport5.6测试可以打开生成的jrxml文件，更高版本的ireport没有测试过了  
-（三）ireport5.6需要jdk1.7运行（jdk1.8运行ireport会报错），当本项目使用的是jdk1.8编译的
+（三）ireport5.6需要jdk1.7运行（jdk1.8运行ireport会报错），但本项目使用的是jdk1.8编译的
   
 二、使用方法  
 （一）模仿pojo22.BankFund写自己要生成的模板bean，如果想试试效果可以先跳过这步  
@@ -14,7 +14,7 @@ config.output.package 生成该包名下面所以的模板
 （三）运行AutoGenerateJasperForMemberV1_6.AutoGenerateJasperLoop中的main方法
 
 （四）用ireport5.6打开生成的jrxml，作另存为操作  
-（直接将生成的jrxml在项目中使用可能会报错，稳妥起见强烈用ireport另存为）  
+（直接将生成的jrxml在项目中使用可能会报错，稳妥起见强烈建议用ireport另存为一个新的jrxml）  
 
 
 三、建立自己的模板bean  
