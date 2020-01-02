@@ -6,17 +6,19 @@
   
 二、使用方法  
 （一）模仿pojo22.BankFund写自己要生成的模板bean，如果想试试效果可以先跳过这步  
- 
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/pojo.PNG)  
 （二）修改config.properties  
-config.output.path 导出路径
-config.output.package 生成该包名下面所以的模板
-
-（三）运行AutoGenerateJasperForMemberV1_6.AutoGenerateJasperLoop中的main方法
-
+config.output.path 导出路径  
+config.output.package 生成该包名下面所以的模板  
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/config.PNG)  
+（三）运行AutoGenerateJasperForMemberV1_6.AutoGenerateJasperLoop中的main方法  
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/tree.PNG)  
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/console.PNG)  
 （四）用ireport5.6打开生成的jrxml，作另存为操作  
 （直接将生成的jrxml在项目中使用可能会报错，稳妥起见强烈建议用ireport另存为一个新的jrxml）  
-
-
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/output.PNG)  
+ ![image](https://github.com/weichuyu/GenerateJrxmlFromBean/blob/master/sample/img/ireport.PNG)  
+ 
 三、建立自己的模板bean  
 （一）在类开头添加注解  
 比如：@ExcelHeaderResources(title="清算行资金调拨表查询")  
